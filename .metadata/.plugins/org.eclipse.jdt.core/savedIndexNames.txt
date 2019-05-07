@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\уек╪т╢\MOOC_Java_Pro\.metadata\.plugins\org.eclipse.jdt.core
+968505563.index
