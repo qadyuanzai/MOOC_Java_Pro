@@ -5,6 +5,19 @@ public class VendingMachine {
 	int balance;
 	int total;
 	
+	VendingMachine()
+	{
+		//构造函数，在构造时自动调用
+		//先定义完外部的东西再回到构造函数
+		//不能有返回类型
+	}
+	VendingMachine(int price)
+	{
+		this.price = price;
+		//重载
+		//同名参数表不同，自动根据给的参数调用
+	}
+	
 	void showPrompt()
 	{
 		System.out.println("Welcome");
@@ -13,6 +26,7 @@ public class VendingMachine {
 	void insertMoney(int amount)
 	{
 		 balance = balance + amount;
+		 showBalance();
 	}
 	
 	void showBalance()
@@ -39,6 +53,9 @@ public class VendingMachine {
 		vm.insertMoney(100);
 		vm.getFood();
 		vm.showBalance();
+		VendingMachine vm1 = new VendingMachine(100);
+		vm1.insertMoney(100);
+		vm1.showBalance();
 	}
 
 }
