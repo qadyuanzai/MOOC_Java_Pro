@@ -1,7 +1,10 @@
 package castle;
 
 public class Handler {
-	public void doCmd(String word) {
-		
+	protected Game game;
+	public Handler(Game game){
+		this.game = game;
 	}
+	public void doCmd(String word) {}
+	public boolean isBye() {return false;}
 }
